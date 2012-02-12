@@ -22,3 +22,13 @@ file_again = raw_input("> ")
 txt_again = open(file_again)
 print txt_again.read()
 txt_again.close()
+
+#to open python from command line and read file:
+#$ python
+#>>> textfile = open('ex15_sample.txt')
+#>>> print textfile.read()
+#This is stuff I typed into a file.
+#It is really cool stuff.
+#Lots and lots of fun to have in here.
+#>>> textfile.close()
+#>>> quit()
