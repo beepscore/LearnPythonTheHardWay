@@ -3,6 +3,8 @@
 print "Mary had a little lamb."
 print "Its fleece was white as %s." % 'snow'
 print "And everywhere that Mary went."
+
+# print 10 periods
 print "." * 10 # what'd that do?
 
 end1 = "C"
@@ -20,5 +22,6 @@ end12 = "r"
 
 # watch that comma at the end. try removing it to see what happens
 # comma inhibits line feed, puts both prints on one line.
+# outputs Cheese Burger
 print end1 + end2 + end3 + end4 + end5 + end6,
 print end7 + end8 + end9 + end10 + end11 + end12 
