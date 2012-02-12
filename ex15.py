@@ -9,26 +9,27 @@ from sys import argv
 # reference http://docs.python.org/library/sys.html
 script, filename = argv
 
-txt = open(filename)
+# note txt_file is a file object, not a string
+txt_file = open(filename)
 print "Here's your file %r:" % filename
-print txt.read()
-txt.close()
+print txt_file.read()
+txt_file.close()
 
 # get filename from user input
 # advantage- user can choose file at runtime.
 print "Type the filename again:"
 file_again = raw_input("> ")
 
-txt_again = open(file_again)
-print txt_again.read()
-txt_again.close()
+txt_file_again = open(file_again)
+print txt_file_again.read()
+txt_file_again.close()
 
 #to open python from command line and read file:
 #$ python
-#>>> textfile = open('ex15_sample.txt')
-#>>> print textfile.read()
+#>>> text_file = open('ex15_sample.txt')
+#>>> print text_file.read()
 #This is stuff I typed into a file.
 #It is really cool stuff.
 #Lots and lots of fun to have in here.
-#>>> textfile.close()
+#>>> text_file.close()
 #>>> quit()
