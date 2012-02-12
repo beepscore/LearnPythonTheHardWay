@@ -5,6 +5,8 @@ from sys import argv
 
 # get filename as a command line argument
 # advantage- can be supplied programmatically, doesn't require user input
+# argv[0] is the script name
+# reference http://docs.python.org/library/sys.html
 script, filename = argv
 
 txt = open(filename)
