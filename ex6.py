@@ -20,12 +20,11 @@ print "I said: %r." % x
 # put string in string #4
 print "I also said: '%s'." % y
 
-hilarious = False
-# put string in string #5 (converts bool to string)
+# joke_evaluation contains format specifier %r which will be used below
 joke_evaluation = "Isn't that joke so funny?! %r"
 
-# joke_evaluation contains format specifier, 
-# so it works with % hilarious
+hilarious = False
+# %r in joke_evaluation combines with % to convert hilarious bool to string
 print joke_evaluation % hilarious
 
 w = "This is the left side of..."
