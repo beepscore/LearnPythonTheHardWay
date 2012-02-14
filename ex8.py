@@ -7,7 +7,10 @@ print formatter % (1, 2, 3, 4)
 print formatter % ("one", "two", "three", "four")
 
 print formatter % (True, False, False, True)
+
+# substitutes 4 formatter string arguments into first formatter string
 print formatter % (formatter, formatter, formatter, formatter)
+
 # third string will be delimited by "" due to inner '
 print formatter % (
         "I had this thing.", 
