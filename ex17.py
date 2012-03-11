@@ -5,7 +5,10 @@ from sys import argv
 # exists returns True if a file exists
 from os.path import exists
 
-#assign value to to_file
+# assign "from_file" and "to_file" using command line array argument "argv"
+#from_file = argv[0]
+#to_file = argv[1]
+#In Python can assign multiple variables from one array on one line
 script, from_file, to_file = argv
 
 print "Copying from %s to %s" % (from_file, to_file)
