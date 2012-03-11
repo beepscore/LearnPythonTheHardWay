@@ -21,7 +21,5 @@ print "Does the output file exist? %r" % exists(to_file)
 output = open(to_file, 'w')
 output.write(indata)
 
-print "Alright, all done."
-
 output.close()
 input.close()
