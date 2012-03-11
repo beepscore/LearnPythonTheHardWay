@@ -1,11 +1,13 @@
 #!/usr/bin/python
 
 #import sys module
+# reference http://docs.python.org/library/sys.html
 from sys import argv
 
-# get filename as a command line argument
-# argv[0] is the script name
-# reference http://docs.python.org/library/sys.html
+# assign "script" and "filename" using command line argument array "argv"
+#script = argv[0]
+#filename = argv[1]
+#In Python can assign multiple variables from one array on one line
 script, filename = argv
 
 print "We're going to erase %r." % filename
